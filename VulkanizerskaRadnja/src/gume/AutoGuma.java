@@ -1,6 +1,6 @@
 package gume;
 /**
- * 
+ * Klasa koja opisuje auto gumu
  * @author Dusko Milosevic
  * @version 1.0
  *
@@ -106,13 +106,20 @@ public class AutoGuma {
 			throw new RuntimeException("Visina van opsega");
 		this.visina = visina;
 	}
-
+	/**
+	 * Vraca podatake za auto gumu
+	 * @return String koji sadrzi sve podatke za auto gumu
+	 */
 	@Override
 	public String toString() {
 		return "AutoGuma [markaModel=" + markaModel + ", precnik=" + precnik + ", sirina=" + sirina + ", visina="
 				+ visina + "]";
 	}
-
+	/**
+	 * Poredi dve gume po marki modela, precniku, sirini i visini
+	 * @param objekat koji je tipa AutoGuma
+	 * @return boolean vrednost, true ako su atributi dve AutoGume jednaki, odnosno false ako nisu ili ako uneti objekat nije tipa AutoGuma 
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

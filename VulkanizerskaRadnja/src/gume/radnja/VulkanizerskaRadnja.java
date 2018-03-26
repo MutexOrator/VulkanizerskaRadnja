@@ -3,7 +3,7 @@ package gume.radnja;
 import java.util.LinkedList;
 import gume.AutoGuma;
 /**
- * 
+ * Klasa koja opisuje vulkanizersku radnju
  * @author Dusko Milosevic
  * @version 1.0
  *
@@ -17,9 +17,12 @@ public class VulkanizerskaRadnja {
 	 * Dodavanje nove gume na pocetak liste guma
 	 * @param a nova guma
 	 * @throws java.lang.RuntimeException ako je uneta guma koja
+	 * * <ul>
+	 * <li>vec postoji u listi guma</li>
+	 * </ul>
+	 * @throws java.lang.NullPointerException ako je uneta guma koja
 	 * <ul>
 	 * <li>je null</li>
-	 * <li>vec postoji u listi guma</li>
 	 * </ul>
 	 */
 	public void dodajGumu(AutoGuma a) {
